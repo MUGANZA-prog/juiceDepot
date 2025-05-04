@@ -1,0 +1,236 @@
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f2f5;
+  }
+  
+  .signup-form {
+    background: white;
+    padding: 2rem;
+    border-radius: 16px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .signup-form h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #333;
+  }
+  
+  .signup-form input {
+    padding: 12px;
+    margin-bottom: 1rem;
+    border: none;
+    border-radius: 12px;
+    background-color: #f7f9fc;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05);
+    font-size: 1rem;
+    color: black;
+  }
+
+  select {
+    padding: 12px;
+    margin-bottom: 1rem;
+    border: none;
+    border-radius: 12px;
+    background-color: #f7f9fc;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05);
+    font-size: 1rem;
+    color: black;
+  }
+  
+  .signup-form input:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px #4a90e2;
+  }
+  
+  .signup-form button {
+    background-color: #4a90e2;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 12px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .signup-form button:hover {
+    background-color: #357ABD;
+  }
+.div{
+    padding:  90px;
+}  
+
+
+.login-form {
+    background: white;
+    padding: 2rem;
+    border-radius: 16px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  input {
+    padding: 12px;
+    margin-bottom: 1rem;
+    border: none;
+    border-radius: 12px;
+    background-color: #f7f9fc;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05);
+    font-size: 1rem;
+    color: black;
+  }
+  
+  button {
+    background-color: #4a90e2;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 12px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  .login-form input {
+    padding: 12px;
+    margin-bottom: 1rem;
+    border: none;
+    border-radius: 12px;
+    background-color: #f7f9fc;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05);
+    font-size: 1rem;
+    color: black;
+  }
+  
+   .login-form button {
+    background-color: #4a90e2;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 12px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  span {
+    padding-top: 6px;
+  }
+
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #007bff;
+    color: white;
+    padding: 1rem 2rem;
+  }
+  
+  .navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+  }
+  
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  .logout-btn {
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  .dashboard-content {
+    padding: 2rem;
+  }
+  
+
+  .products-container{
+    display: flex;
+    grid-row-end: auto;
+  }
+
+
+
+
+  /* Layout wrapper */
+.main-layout {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+/* Content below navbar */
+.layout-body {
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+}
+
+/* Sidebar styling */
+.layout-body > .sidebar {
+  width: 220px;
+  min-width: 220px;
+  background-color: #f4f4f4;
+  height: 100%;
+  overflow-y: auto;
+}
+
+/* Product area */
+.products-container {
+  flex: 1;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  overflow-y: auto;
+}
+
+.sidebar {
+  padding: 20px;
+  background-color: #f0f0f0;
+  width: 220px;
+  min-height: 100%;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar h2 {
+  margin-bottom: 10px;
+}
+
+.filter-group {
+  margin-bottom: 20px;
+}
+
+.filter-group input[type='text'] {
+  width: 100%;
+  padding: 6px;
+  margin-top: 5px;
+  box-sizing: border-box;
+}
+
+.filter-group input[type='checkbox'] {
+  margin-right: 10px;
+}

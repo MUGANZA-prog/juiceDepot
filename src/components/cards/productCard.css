@@ -1,0 +1,76 @@
+/* Tailwind CSS import for utility classes */
+@import 'https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css';
+
+.product-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 16px;
+    width: 100%;
+    max-width: 300px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin: 16px;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.product-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 16px;
+}
+
+.product-card > div {
+    width: 100%;
+    text-align: center;
+}
+
+.product-card > div:nth-child(2) {
+    margin-bottom: 12px;
+}
+
+.product-card > div:nth-child(2) > div:first-child span {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #1a202c;
+}
+
+.product-card > div:nth-child(2) > div:last-child span {
+    font-size: 1rem;
+    color: #718096;
+}
+
+.product-card > div:nth-child(3) {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 16px;
+}
+
+.product-card > div:nth-child(3) > div span {
+    font-size: 1rem;
+    color: #2d3748;
+}
+
+.product-card > div:last-child button {
+    width: 100%;
+    padding: 10px;
+    background-color: #3182ce;
+    color: white;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.product-card > div:last-child button:hover {
+    background-color: #2b6cb0;
+}
