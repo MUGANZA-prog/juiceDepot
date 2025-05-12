@@ -7,6 +7,7 @@ import Dashboard from './components/Dashboard';
 import RegisterProduct from './components/RegisterProduct';
 import RegisterCategory from './components/RegisterCategory';
 import Products from './components/Products';
+import Select from './components/Select'
 
 function App() {
   return (
@@ -20,7 +21,9 @@ function App() {
             <Route path='/registerProduct' element={<RegisterProduct/>}/>
             <Route path='/registerCategory' element={<RegisterCategory/>}/>
             <Route path='/products' element={<Products/>}/>
+            <Route path='/selectProducts' element = {<Select/>}/>
             <Route path='*' element={<h1>404 Not Found</h1>} />
+
           </Routes>
         </Router>
   );

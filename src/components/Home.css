@@ -127,6 +127,21 @@
     padding-top: 6px;
   }
 
+  .bck{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 4px;
+  }
+  .back{
+    background: white;
+    color: black;
+    border-radius: 100%;
+    padding: 10px;
+    size: 16px;
+    cursor: pointer;
+  }
+
 
   .navbar {
     display: flex;

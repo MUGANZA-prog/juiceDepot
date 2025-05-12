@@ -1,4 +1,4 @@
-const { createProduct, getProduct } = require('../services/productService');
+const { createProduct, getProduct, selectProducts } = require('../services/productService');
 const Product = require('../models/product');
 
 
@@ -28,6 +28,24 @@ const getAllProducts = (req, res) => {
         }
     })
 }
+
+
+const productService = require('../services/productService');
+
+const sellProduct = (req, res) => {
+  const { productId, quantity } = req.body;
+
+  productService.sellProduct(productId, quantity, (err, result) => {
+    if (err) {
+      console.error('Sell Error:', err.message);
+      return res.status(400).json({ error: err.message });
+    }
+    res.status(200).json(result);
+  });
+};
+
+
+
  
 
-module.exports = { registerProduct, getAllProducts };
+module.exports = { registerProduct, getAllProducts, sellProduct };
